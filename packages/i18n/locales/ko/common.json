@@ -2137,6 +2137,8 @@
   "limit_booking_frequency_description": "이 이벤트를 예약할 수 있는 횟수 제한",
   "only_show_first_available_slot": "각 날의 첫 번째 슬롯만 사용 가능으로 표시",
   "only_show_first_available_slot_description": "이 설정은 이 이벤트 유형에 대해 하루에 하나의 슬롯만 사용 가능하도록 제한하며, 가장 이른 시간에 예약됩니다.",
+  "check_conflicts_within_event_type": "이 이벤트 유형 내에서만 충돌 확인",
+  "check_conflicts_within_event_type_description": "활성화하면 충돌이 이 이벤트 유형의 예약에 대해서만 확인되며, 다른 이벤트 유형과 외부 캘린더는 무시됩니다. 하나의 캘린더를 공유하는 독립적인 리소스를 관리하는 데 유용합니다.",
   "limit_total_booking_duration": "총 예약 기간 제한",
   "limit_total_booking_duration_description": "이 이벤트를 예약할 수 있는 총 시간 제한",
   "booker_upcoming_limit": "예약자당 예정된 예약 수 제한",

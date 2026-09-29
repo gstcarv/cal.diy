@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Piira, mitu korda seda üritust saab broneerida",
   "only_show_first_available_slot": "Näita ainult päeva esimest vaba aega",
   "only_show_first_available_slot_description": "See piirab teie saadavust selle sündmuse tüübi jaoks ühe ajaga päevas, mis on planeeritud kõige varasemal vabal ajal.",
+  "check_conflicts_within_event_type": "Kontrolli konflikte ainult selle sündmuse tüübi piires",
+  "check_conflicts_within_event_type_description": "Kui see on lubatud, kontrollitakse konflikte ainult selle sündmuse tüübi broneeringute suhtes, jättes tähelepanuta teie muud sündmuse tüübid ja välised kalendrid. Kasulik ühist kalendrit jagavate sõltumatute ressursside haldamiseks.",
   "limit_total_booking_duration": "Limit kogu broneeringu kestust",
   "limit_total_booking_duration_description": "Piirake selle sündmuse broneerimiseks kuluvat aega",
   "booker_upcoming_limit": "Piira ühe broneerija tulevaste broneeringute arvu",

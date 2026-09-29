@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Begrens hvor mange ganger denne hendelsen kan bookes",
   "only_show_first_available_slot": "Vis kun den første tilgjengelige tiden hver dag",
   "only_show_first_available_slot_description": "Dette vil begrense tilgjengeligheten for denne hendelsestypen til én tid per dag, planlagt til den tidligste tilgjengelige tiden.",
+  "check_conflicts_within_event_type": "Sjekk kun konflikter innenfor denne hendelsestypen",
+  "check_conflicts_within_event_type_description": "Når dette er aktivert, sjekkes konflikter kun mot bestillinger av denne hendelsestypen, mens dine andre hendelsestyper og eksterne kalendere ignoreres. Nyttig for å administrere uavhengige ressurser som deler én kalender.",
   "limit_total_booking_duration": "Begrens total bookingvarighet",
   "limit_total_booking_duration_description": "Begrens total tid som denne hendelsen kan bookes",
   "booker_upcoming_limit": "Begrens antall kommende bookinger per booker",

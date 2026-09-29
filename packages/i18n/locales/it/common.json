@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Indica quante volte è possibile prenotare questo evento",
   "only_show_first_available_slot": "Mostra solo il primo slot disponibile di ogni giorno",
   "only_show_first_available_slot_description": "Questo limiterà la tua disponibilità per questo tipo di evento a uno slot al giorno, programmato al primo orario disponibile.",
+  "check_conflicts_within_event_type": "Controlla i conflitti solo all'interno di questo tipo di evento",
+  "check_conflicts_within_event_type_description": "Se attivato, i conflitti vengono controllati solo rispetto alle prenotazioni di questo tipo di evento, ignorando gli altri tipi di evento e i calendari esterni. Utile per gestire risorse indipendenti che condividono un calendario.",
   "limit_total_booking_duration": "Limita durata totale prenotazione",
   "limit_total_booking_duration_description": "Indicare la quantità di tempo totale disponibile per prenotare questo evento",
   "booker_upcoming_limit": "Limita il numero di prenotazioni future per prenotante",

@@ -2088,6 +2088,8 @@
   "limit_booking_frequency_description": "Giới hạn số lần sự kiện này có thể được đặt lịch. <0>Tìm hiểu thêm</0>",
   "only_show_first_available_slot": "Chỉ hiển thị khung giờ đầu tiên của mỗi ngày",
   "only_show_first_available_slot_description": "Điều này sẽ giới hạn khả năng của bạn cho loại sự kiện này chỉ một khung giờ mỗi ngày, được lên lịch vào thời gian sớm nhất có thể.",
+  "check_conflicts_within_event_type": "Chỉ kiểm tra xung đột trong loại sự kiện này",
+  "check_conflicts_within_event_type_description": "Khi bật, xung đột chỉ được kiểm tra với các lượt đặt của loại sự kiện này, bỏ qua các loại sự kiện khác và lịch bên ngoài của bạn. Hữu ích để quản lý các tài nguyên độc lập dùng chung một lịch.",
   "limit_total_booking_duration": "Giới hạn tổng thời gian đặt lịch hẹn",
   "limit_total_booking_duration_description": "Giới hạn tổng số lần sự kiện này có thể được đặt lịch hẹn",
   "booker_upcoming_limit": "Giới hạn số lượng đặt lịch sắp tới cho mỗi người đặt",

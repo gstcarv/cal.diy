@@ -2167,6 +2167,8 @@
   "limit_booking_frequency_description": "このイベントを予約できる回数に上限を設定する",
   "only_show_first_available_slot": "各日の最初のスロットのみを表示",
   "only_show_first_available_slot_description": "この設定により、このイベントタイプの利用可能時間は1日1スロットに制限され、最も早い時間にスケジュールされます。",
+  "check_conflicts_within_event_type": "このイベントタイプ内でのみ競合を確認する",
+  "check_conflicts_within_event_type_description": "有効にすると、競合はこのイベントタイプの予約とのみ照合され、他のイベントタイプや外部カレンダーは無視されます。1つのカレンダーを共有する独立したリソースの管理に便利です。",
   "limit_total_booking_duration": "総予約期間に上限を設定する",
   "limit_total_booking_duration_description": "このイベントを予約できる時間の合計に上限を設定する",
   "booker_upcoming_limit": "予約者ごとの今後の予約数を制限",

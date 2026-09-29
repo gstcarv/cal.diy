@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Begræns, hvor mange gange denne begivenhed kan bookes. <0>Læs mere</0>",
   "only_show_first_available_slot": "Vis kun den første ledige tid hver dag",
   "only_show_first_available_slot_description": "Dette vil begrænse din tilgængelighed for denne begivenhedstype til én tid pr. dag, planlagt til det tidligst tilgængelige tidspunkt.",
+  "check_conflicts_within_event_type": "Tjek kun konflikter inden for denne begivenhedstype",
+  "check_conflicts_within_event_type_description": "Når det er aktiveret, tjekkes konflikter kun mod bookinger af denne begivenhedstype, mens dine andre begivenhedstyper og eksterne kalendere ignoreres. Nyttigt til at administrere uafhængige ressourcer, der deler en kalender.",
   "limit_total_booking_duration": "Begræns den samlede bookingvarighed",
   "limit_total_booking_duration_description": "Begræns den samlede tid, som denne begivenhed kan bookes",
   "booker_upcoming_limit": "Begræns antallet af kommende bookinger pr. booker",

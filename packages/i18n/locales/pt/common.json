@@ -2137,6 +2137,8 @@
   "limit_booking_frequency_description": "Limite quantas vezes este evento pode ser reservado. <0>Saiba mais</0>",
   "only_show_first_available_slot": "Mostrar apenas o primeiro horário disponível de cada dia",
   "only_show_first_available_slot_description": "Isto limitará a sua disponibilidade para este tipo de evento a um horário por dia, agendado na primeira hora disponível.",
+  "check_conflicts_within_event_type": "Verificar conflitos apenas dentro deste tipo de evento",
+  "check_conflicts_within_event_type_description": "Quando ativado, os conflitos são verificados apenas em relação às marcações deste tipo de evento, ignorando os seus outros tipos de evento e calendários externos. Útil para gerir recursos independentes que partilham um calendário.",
   "limit_total_booking_duration": "Limitar a duração total da reserva",
   "limit_total_booking_duration_description": "Limitar o tempo total que pode ser reservado para este evento",
   "booker_upcoming_limit": "Limitar número de reservas futuras por agendador",

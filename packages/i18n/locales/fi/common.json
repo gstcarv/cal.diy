@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Rajoita kuinka monta kertaa tämä tapahtuma voidaan varata",
   "only_show_first_available_slot": "Näytä vain päivän ensimmäinen vapaa aika",
   "only_show_first_available_slot_description": "Tämä rajoittaa tämän tapahtumatyypin saatavuuden yhteen aikaan päivässä, joka ajoitetaan aikaisimpaan mahdolliseen ajankohtaan.",
+  "check_conflicts_within_event_type": "Tarkista ristiriidat vain tämän tapahtumatyypin sisällä",
+  "check_conflicts_within_event_type_description": "Kun tämä on käytössä, ristiriidat tarkistetaan vain tämän tapahtumatyypin varauksia vasten, jättäen huomiotta muut tapahtumatyyppisi ja ulkoiset kalenterit. Hyödyllinen hallittaessa itsenäisiä resursseja, jotka jakavat saman kalenterin.",
   "limit_total_booking_duration": "Rajoita varauksen kokonaiskestoa",
   "limit_total_booking_duration_description": "Rajoita tämän tapahtuman varattavissa olevaa kokonaisaikaa",
   "booker_upcoming_limit": "Rajoita tulevien varausten määrää varaajaa kohden",

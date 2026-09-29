@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Limitez le nombre de réservations possibles pour cet événement.",
   "only_show_first_available_slot": "N'afficher que le premier créneau disponible de chaque jour",
   "only_show_first_available_slot_description": "Cela limitera votre disponibilité pour ce type d'événement à un créneau par jour, programmé au plus tôt possible.",
+  "check_conflicts_within_event_type": "Vérifier les conflits uniquement au sein de ce type d'événement",
+  "check_conflicts_within_event_type_description": "Lorsque cette option est activée, les conflits ne sont vérifiés que par rapport aux réservations de ce type d'événement, en ignorant vos autres types d'événements et les calendriers externes. Utile pour gérer des ressources indépendantes qui partagent un même calendrier.",
   "limit_total_booking_duration": "Limiter la durée totale de réservation",
   "limit_total_booking_duration_description": "Limitez la durée totale pendant laquelle cet événement peut être réservé.",
   "booker_upcoming_limit": "Limiter le nombre de réservations à venir par utilisateur",

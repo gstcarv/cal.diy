@@ -2137,6 +2137,8 @@
   "limit_booking_frequency_description": "Beperk hoe vaak deze gebeurtenis kan worden geboekt",
   "only_show_first_available_slot": "Toon alleen de eerste beschikbare tijdslot",
   "only_show_first_available_slot_description": "Dit beperkt je beschikbaarheid voor dit type evenement tot één tijdslot per dag, gepland op de vroegst beschikbare tijd.",
+  "check_conflicts_within_event_type": "Controleer alleen conflicten binnen dit gebeurtenistype",
+  "check_conflicts_within_event_type_description": "Wanneer ingeschakeld worden conflicten alleen gecontroleerd tegen boekingen van dit gebeurtenistype, waarbij je andere gebeurtenistypen en externe agenda's worden genegeerd. Handig voor het beheren van onafhankelijke resources die één agenda delen.",
   "limit_total_booking_duration": "Totale boekingsduur beperken",
   "limit_total_booking_duration_description": "Beperk de totale tijd dat deze gebeurtenis kan worden geboekt",
   "booker_upcoming_limit": "Beperk het aantal aankomende boekingen per boeker",

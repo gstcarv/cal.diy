@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Omezte, kolikrát lze tuto událost rezervovat. <0>Zjistit více</0>",
   "only_show_first_available_slot": "Zobrazit pouze první dostupný časový slot",
   "only_show_first_available_slot_description": "Tímto omezíte svou dostupnost pro tento typ události na jeden časový slot denně, naplánovaný na nejbližší dostupný čas.",
+  "check_conflicts_within_event_type": "Kontrolovat konflikty pouze v rámci tohoto typu události",
+  "check_conflicts_within_event_type_description": "Když je zapnuto, konflikty se kontrolují pouze vůči rezervacím tohoto typu události a ostatní typy událostí a externí kalendáře se ignorují. Užitečné pro správu nezávislých zdrojů, které sdílejí jeden kalendář.",
   "limit_total_booking_duration": "Omezení celkové doby trvání rezervace",
   "limit_total_booking_duration_description": "Omezení celkové doby, po kterou je možné tuto událost rezervovat",
   "booker_upcoming_limit": "Omezit počet nadcházejících rezervací na jednoho rezervujícího",

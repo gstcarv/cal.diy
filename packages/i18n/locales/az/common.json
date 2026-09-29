@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Bu tədbirin neçə dəfə rezervasiya edilə biləcəyini məhdudlaşdırın. <0>Daha çox öyrənin</0>",
   "only_show_first_available_slot": "Hər günün yalnız ilk mövcud vaxtını göstərin",
   "only_show_first_available_slot_description": "Bu, bu hadisə növü üçün mövcudluğunuzu hər gün üçün bir vaxta məhdudlaşdıracaq, ən erkən mövcud vaxtda planlaşdırılacaq.",
+  "check_conflicts_within_event_type": "Yalnız bu tədbir növü daxilində konfliktləri yoxla",
+  "check_conflicts_within_event_type_description": "Aktiv olduqda, konfliktlər yalnız bu tədbir növünün rezervasiyalarına qarşı yoxlanılır, digər tədbir növləriniz və xarici təqvimlər nəzərə alınmır. Bir təqvimi paylaşan müstəqil resursları idarə etmək üçün faydalıdır.",
   "limit_total_booking_duration": "Ümumi rezervasiya müddətini məhdudlaşdırın",
   "limit_total_booking_duration_description": "Bu hadisənin rezervasiya edilə biləcəyi ümumi vaxtı məhdudlaşdırın",
   "booker_upcoming_limit": "Hər rezervasiya edən üçün gələcək rezervasiyaların sayını məhdudlaşdırın",

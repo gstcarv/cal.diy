@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Korlátozza, hányszor foglalható le ez az esemény",
   "only_show_first_available_slot": "Csak az első elérhető időpontot mutassa minden nap",
   "only_show_first_available_slot_description": "Ez korlátozza az elérhetőségét ehhez az eseménytípushoz napi egy időpontra, amely a legkorábbi elérhető időpontban van ütemezve.",
+  "check_conflicts_within_event_type": "Ütközések ellenőrzése csak ezen az eseménytípuson belül",
+  "check_conflicts_within_event_type_description": "Ha engedélyezve van, az ütközéseket csak ennek az eseménytípusnak a foglalásaival ellenőrzi, figyelmen kívül hagyva a többi eseménytípust és a külső naptárakat. Hasznos egy naptáron osztozó független erőforrások kezeléséhez.",
   "limit_total_booking_duration": "Korlátozza a foglalás teljes időtartamát",
   "limit_total_booking_duration_description": "Korlátozza az esemény foglalható teljes időtartamát",
   "booker_upcoming_limit": "Korlátozza a foglalónkénti közelgő foglalások számát",

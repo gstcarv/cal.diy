@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "حدد عدد المرات التي يمكن فيها حجز هذا الحدث. <0>تعرف على المزيد</0>",
   "only_show_first_available_slot": "عرض الفتحة الأولى المتاحة فقط لكل يوم",
   "only_show_first_available_slot_description": "سيؤدي ذلك إلى تقييد توفر هذا النوع من الأحداث إلى فتحة واحدة في اليوم، مجدولة في أقرب وقت متاح.",
+  "check_conflicts_within_event_type": "التحقق من التعارضات ضمن نوع الحدث هذا فقط",
+  "check_conflicts_within_event_type_description": "عند التفعيل، يتم التحقق من التعارضات فقط مقابل حجوزات نوع الحدث هذا، مع تجاهل أنواع الأحداث الأخرى والتقويمات الخارجية. مفيد لإدارة موارد مستقلة تشترك في تقويم واحد.",
   "limit_total_booking_duration": "الحد من مدة الحجز الإجمالية",
   "limit_total_booking_duration_description": "الحد من إجمالي الوقت المخصص الذي يمكن حجزه لهذا الحدث",
   "booker_upcoming_limit": "حدد عدد الحجوزات القادمة لكل حاجز",

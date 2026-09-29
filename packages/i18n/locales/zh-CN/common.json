@@ -2088,6 +2088,8 @@
   "limit_booking_frequency_description": "限制此活动可以被预约的次数。<0>了解更多</0>",
   "only_show_first_available_slot": "仅显示每天的第一个可用时段",
   "only_show_first_available_slot_description": "这将限制此事件类型的可用性，每天仅安排在最早的可用时间段。",
+  "check_conflicts_within_event_type": "仅检查此活动类型内的冲突",
+  "check_conflicts_within_event_type_description": "启用后，仅根据此活动类型的预订检查冲突，忽略您的其他活动类型和外部日历。适用于管理共享同一日历的独立资源。",
   "limit_total_booking_duration": "限制总预约时长",
   "limit_total_booking_duration_description": "限制可以预约此活动的总时间",
   "booker_upcoming_limit": "限制每位预约者的未来预约数量",

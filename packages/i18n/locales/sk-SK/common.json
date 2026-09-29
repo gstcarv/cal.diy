@@ -2137,6 +2137,8 @@
   "limit_booking_frequency_description": "Obmedzte, koľkokrát môže byť táto udalosť rezervovaná. <0>Dozvedieť sa viac</0>",
   "only_show_first_available_slot": "Zobraziť iba prvý dostupný časový úsek",
   "only_show_first_available_slot_description": "Týmto obmedzíte svoju dostupnosť pre tento typ udalosti na jeden časový úsek denne, naplánovaný na najskorší dostupný čas.",
+  "check_conflicts_within_event_type": "Kontrolovať konflikty iba v rámci tohto typu udalosti",
+  "check_conflicts_within_event_type_description": "Keď je zapnuté, konflikty sa kontrolujú iba voči rezerváciám tohto typu udalosti, pričom sa ignorujú ostatné typy udalostí a externé kalendáre. Užitočné na správu nezávislých zdrojov, ktoré zdieľajú jeden kalendár.",
   "limit_total_booking_duration": "Obmedziť celkovú dĺžku rezervácie",
   "limit_total_booking_duration_description": "Obmedzte celkový čas, ktorý môže byť táto udalosť rezervovaná",
   "booker_upcoming_limit": "Obmedziť počet nadchádzajúcich rezervácií na rezervujúceho",

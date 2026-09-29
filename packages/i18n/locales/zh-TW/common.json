@@ -2088,6 +2088,8 @@
   "limit_booking_frequency_description": "限制此活動可被預約的次數。<0>了解更多</0>",
   "only_show_first_available_slot": "僅顯示每天的第一個可用時段",
   "only_show_first_available_slot_description": "這將限制此事件類型的可用時間每天僅一個時段，安排在最早的可用時間。",
+  "check_conflicts_within_event_type": "僅檢查此活動類型內的衝突",
+  "check_conflicts_within_event_type_description": "啟用後，衝突僅會針對此活動類型的預約進行檢查，並忽略您的其他活動類型與外部行事曆。適合用於管理共用同一行事曆的獨立資源。",
   "limit_total_booking_duration": "限制總預約時間",
   "limit_total_booking_duration_description": "限制此活動可預約的總時間",
   "booker_upcoming_limit": "限制每位預約者的未來預約數量",

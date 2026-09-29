@@ -2088,6 +2088,8 @@
   "limit_booking_frequency_description": "Bu etkinliğin kaç kez rezerve edilebileceğini sınırlayın. <0>Daha fazla bilgi</0>",
   "only_show_first_available_slot": "Her günün sadece ilk müsait zaman dilimini göster",
   "only_show_first_available_slot_description": "Bu, bu etkinlik türü için müsaitliğinizi günde bir zaman dilimi ile sınırlandıracak ve en erken müsait zamanda planlanacaktır.",
+  "check_conflicts_within_event_type": "Çakışmaları yalnızca bu etkinlik türü içinde denetle",
+  "check_conflicts_within_event_type_description": "Etkinleştirildiğinde, çakışmalar yalnızca bu etkinlik türünün rezervasyonlarına karşı denetlenir; diğer etkinlik türleriniz ve harici takvimler yok sayılır. Bir takvimi paylaşan bağımsız kaynakları yönetmek için kullanışlıdır.",
   "limit_total_booking_duration": "Toplam rezervasyon süresini sınırla",
   "limit_total_booking_duration_description": "Bu etkinlik için rezerve edilebilecek toplam süreyi sınırlayın",
   "booker_upcoming_limit": "Rezervasyon yapan kişi başına yaklaşan rezervasyon sayısını sınırla",

@@ -2112,6 +2112,8 @@
   "limit_booking_frequency_description": "Ograničite koliko puta ovaj događaj može biti rezervisan. <0>Saznajte više</0>",
   "only_show_first_available_slot": "Prikaži samo prvi slobodan termin svakog dana",
   "only_show_first_available_slot_description": "Ovo će ograničiti vašu dostupnost za ovu vrstu događaja na jedan termin dnevno, zakazan u najranijem slobodnom vremenu.",
+  "check_conflicts_within_event_type": "Проверавај конфликте само у оквиру ове врсте догађаја",
+  "check_conflicts_within_event_type_description": "Када је омогућено, конфликти се проверавају само у односу на резервације ове врсте догађаја, занемарујући ваше друге врсте догађаја и спољне календаре. Корисно за управљање независним ресурсима који деле један календар.",
   "limit_total_booking_duration": "Ograničite ukupno trajanje rezervacije",
   "limit_total_booking_duration_description": "Ograničite ukupnu količinu vremena za koje ovaj događaj može da se rezerviše",
   "booker_upcoming_limit": "Ograničite broj nadolazećih rezervacija po korisniku",

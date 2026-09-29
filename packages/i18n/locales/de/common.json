@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Begrenzen, wie oft dieses Ereignis gebucht werden kann",
   "only_show_first_available_slot": "Nur den ersten verfügbaren Zeitslot pro Tag anzeigen",
   "only_show_first_available_slot_description": "Dies beschränkt Ihre Verfügbarkeit für diesen Ereignistyp auf einen Zeitslot pro Tag, der zum frühestmöglichen Zeitpunkt geplant wird.",
+  "check_conflicts_within_event_type": "Konflikte nur innerhalb dieses Ereignistyps prüfen",
+  "check_conflicts_within_event_type_description": "Wenn aktiviert, werden Konflikte nur mit Buchungen dieses Ereignistyps geprüft und Ihre anderen Ereignistypen sowie externe Kalender ignoriert. Nützlich für die Verwaltung unabhängiger Ressourcen, die sich einen Kalender teilen.",
   "limit_total_booking_duration": "Gesamtbuchungsdauer beschränken",
   "limit_total_booking_duration_description": "Begrenzt die Gesamtanzahl, die dieser Termin gebucht werden kann",
   "booker_upcoming_limit": "Anzahl bevorstehender Buchungen pro Bucher begrenzen",

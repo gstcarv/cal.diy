@@ -2088,6 +2088,8 @@
   "limit_booking_frequency_description": "Begränsa hur många gånger denna händelse kan bokas. <0>Läs mer</0>",
   "only_show_first_available_slot": "Visa endast den första tillgängliga tiden varje dag",
   "only_show_first_available_slot_description": "Detta kommer att begränsa din tillgänglighet för denna typ av händelse till en tid per dag, schemalagd vid den tidigast tillgängliga tiden.",
+  "check_conflicts_within_event_type": "Kontrollera endast konflikter inom denna händelsetyp",
+  "check_conflicts_within_event_type_description": "När det är aktiverat kontrolleras konflikter endast mot bokningar av denna händelsetyp, medan dina andra händelsetyper och externa kalendrar ignoreras. Användbart för att hantera oberoende resurser som delar en kalender.",
   "limit_total_booking_duration": "Begränsa total bokningstid",
   "limit_total_booking_duration_description": "Begränsa den totala tiden som händelsen kan bokas",
   "booker_upcoming_limit": "Begränsa antalet kommande bokningar per bokare",

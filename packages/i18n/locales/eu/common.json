@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Mugatu gertaera hau zenbat aldiz erreserbatu daitekeen",
   "only_show_first_available_slot": "Erakutsi soilik egun bakoitzeko lehen tartea eskuragarri gisa",
   "only_show_first_available_slot_description": "Honek gertaera mota honetarako zure eskuragarritasuna eguneko tarte bakarrera mugatuko du, eskuragarri dagoen lehenengo orduan programatuta",
+  "check_conflicts_within_event_type": "Egiaztatu gatazkak gertaera mota honen barruan soilik",
+  "check_conflicts_within_event_type_description": "Gaituta dagoenean, gatazkak gertaera mota honen erreserben aurka soilik egiaztatzen dira, zure beste gertaera motak eta kanpoko egutegiak alde batera utzita. Erabilgarria egutegi bat partekatzen duten baliabide independenteak kudeatzeko.",
   "limit_total_booking_duration": "Erreserbaren iraupen totala mugatu",
   "limit_total_booking_duration_description": "Gertaera honetarako erreserba daitekeen denbora totala mugatu",
   "booker_upcoming_limit": "Mugatu erreserbatzaile bakoitzeko datozen erreserben kopurua",

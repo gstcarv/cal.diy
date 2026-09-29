@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Limitează de câte ori poate fi rezervat acest eveniment. <0>Află mai multe</0>",
   "only_show_first_available_slot": "Afișează doar primul interval disponibil al fiecărei zile",
   "only_show_first_available_slot_description": "Aceasta va limita disponibilitatea pentru acest tip de eveniment la un singur interval pe zi, programat la prima oră disponibilă.",
+  "check_conflicts_within_event_type": "Verifică conflictele doar în cadrul acestui tip de eveniment",
+  "check_conflicts_within_event_type_description": "Când este activat, conflictele sunt verificate doar față de rezervările acestui tip de eveniment, ignorând celelalte tipuri de evenimente și calendarele externe. Util pentru gestionarea resurselor independente care partajează un calendar.",
   "limit_total_booking_duration": "Limitare durată totală a rezervării",
   "limit_total_booking_duration_description": "Limitare durată totală de timp pentru care poate fi rezervat acest eveniment",
   "booker_upcoming_limit": "Limitează numărul de rezervări viitoare per utilizator",

@@ -2142,6 +2142,8 @@
   "limit_booking_frequency_description": "Limita quantes vegades es pot reservar aquest esdeveniment. <0>Més informació</0>",
   "only_show_first_available_slot": "Mostra només el primer espai disponible de cada dia",
   "only_show_first_available_slot_description": "Això limitarà la teva disponibilitat per a aquest tipus d'esdeveniment a un espai per dia, programat en el primer horari disponible.",
+  "check_conflicts_within_event_type": "Comprova els conflictes només dins d'aquest tipus d'esdeveniment",
+  "check_conflicts_within_event_type_description": "Quan està activat, els conflictes només es comproven amb les reserves d'aquest tipus d'esdeveniment, ignorant els altres tipus d'esdeveniments i els calendaris externs. Útil per gestionar recursos independents que comparteixen un calendari.",
   "limit_total_booking_duration": "Limitar la durada total de les reserves",
   "limit_total_booking_duration_description": "Limita el temps total que es pot reservar aquest esdeveniment",
   "booker_upcoming_limit": "Limita el nombre de reserves futures per reservador",
