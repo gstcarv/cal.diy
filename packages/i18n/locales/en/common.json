@@ -2168,6 +2168,8 @@
   "limit_booking_frequency_description": "Limit how many times this event can be booked. <0>Learn more</0>",
   "only_show_first_available_slot": "Only show the first slot of each day as available",
   "only_show_first_available_slot_description": "This will limit your availability for this event type to one slot per day, scheduled at the earliest available time.",
+  "check_conflicts_within_event_type": "Only check conflicts within this event type",
+  "check_conflicts_within_event_type_description": "When enabled, conflicts are only checked against bookings of this event type, ignoring your other event types and external calendars. Useful for managing independent resources that share a calendar.",
   "limit_total_booking_duration": "Limit total booking duration",
   "limit_total_booking_duration_description": "Limit total amount of time that this event can be booked",
   "booker_upcoming_limit": "Limit number of upcoming bookings per booker",

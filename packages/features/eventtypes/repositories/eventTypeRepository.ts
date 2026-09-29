@@ -610,6 +610,7 @@ export class EventTypeRepository implements IEventTypesRepository {
       eventTypeColor: true,
       bookingLimits: true,
       onlyShowFirstAvailableSlot: true,
+      conflictCheckScope: true,
       showOptimizedSlots: true,
       durationLimits: true,
       maxActiveBookingsPerBooker: true,
@@ -890,6 +891,7 @@ export class EventTypeRepository implements IEventTypesRepository {
       eventTypeColor: true,
       bookingLimits: true,
       onlyShowFirstAvailableSlot: true,
+      conflictCheckScope: true,
       showOptimizedSlots: true,
       durationLimits: true,
       maxActiveBookingsPerBooker: true,
@@ -1265,6 +1267,7 @@ export class EventTypeRepository implements IEventTypesRepository {
         periodStartDate: true,
         periodEndDate: true,
         onlyShowFirstAvailableSlot: true,
+        conflictCheckScope: true,
         allowReschedulingPastBookings: true,
         hideOrganizerEmail: true,
         showOptimizedSlots: true,
@@ -1391,6 +1394,7 @@ export class EventTypeRepository implements IEventTypesRepository {
         id: true,
         seatsPerTimeSlot: true,
         bookingLimits: true,
+        conflictCheckScope: true,
         useEventLevelSelectedCalendars: true,
         parent: {
           select: {

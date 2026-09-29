@@ -733,6 +733,7 @@ export class AvailableSlotsService {
         eventTypeId: eventType.id,
         seatedEvent: Boolean(eventType.seatsPerTimeSlot),
         userIdAndEmailMap,
+        conflictCheckScope: eventType.conflictCheckScope,
       }),
       this.getOOODates(startTimeDate, endTimeDate, allUserIds),
     ]);

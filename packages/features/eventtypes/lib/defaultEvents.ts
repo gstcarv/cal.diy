@@ -92,6 +92,7 @@ const commons = {
   requiresCancellationReason: null,
   minimumRescheduleNotice: null,
   onlyShowFirstAvailableSlot: false,
+  conflictCheckScope: "USER" as const,
   allowReschedulingPastBookings: false,
   allowReschedulingCancelledBookings: false,
   hideOrganizerEmail: false,

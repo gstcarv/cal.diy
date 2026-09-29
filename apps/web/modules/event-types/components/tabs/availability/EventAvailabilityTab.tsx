@@ -634,6 +634,22 @@ const EventTypeSchedule = ({
           <p className="mt-2! ml-1 text-gray-600 text-sm">{t("members_default_schedule_description")}</p>
         )
       )}
+      {fieldName === "schedule" && (
+        <Controller
+          name="conflictCheckScope"
+          render={({ field: { value, onChange } }) => (
+            <SettingsToggle
+              toggleSwitchAtTheEnd={true}
+              labelClassName="text-sm"
+              title={t("check_conflicts_within_event_type")}
+              description={t("check_conflicts_within_event_type_description")}
+              checked={value === "EVENT_TYPE"}
+              onCheckedChange={(active) => onChange(active ? "EVENT_TYPE" : "USER")}
+              switchContainerClassName="border-subtle mt-6 rounded-lg border px-4 py-6 sm:px-6"
+            />
+          )}
+        />
+      )}
     </div>
   );
 };

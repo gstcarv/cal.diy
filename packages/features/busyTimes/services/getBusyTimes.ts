@@ -12,7 +12,7 @@ import { withReporting } from "@calcom/lib/sentryWrapper";
 import { performance } from "@calcom/lib/server/perfObserver";
 import prisma from "@calcom/prisma";
 import type { Booking, EventType, Prisma, SelectedCalendar } from "@calcom/prisma/client";
-import { BookingStatus } from "@calcom/prisma/enums";
+import { BookingStatus, ConflictCheckScope } from "@calcom/prisma/enums";
 import type { CalendarFetchMode, EventBusyDetails } from "@calcom/types/Calendar";
 import type { CredentialForCalendarService } from "@calcom/types/Credential";
 
@@ -32,6 +32,7 @@ export class BusyTimesService {
     userEmail: string;
     username: string;
     eventTypeId?: number;
+    conflictCheckScope?: ConflictCheckScope;
     startTime: string;
     beforeEventBuffer?: number;
     afterEventBuffer?: number;
@@ -61,6 +62,7 @@ export class BusyTimesService {
       userEmail,
       username,
       eventTypeId,
+      conflictCheckScope = ConflictCheckScope.USER,
       startTime,
       endTime,
       beforeEventBuffer,
@@ -73,6 +75,10 @@ export class BusyTimesService {
       silentlyHandleCalendarFailures = false,
       mode,
     } = params;
+
+    // In EVENT_TYPE scope, a resource is only busy if booked through this event type,
+    // so external calendar busy times are ignored entirely.
+    const scopeToEventType = conflictCheckScope === ConflictCheckScope.EVENT_TYPE && !!eventTypeId;
 
     logger.silly(
       `Checking Busy time from Cal Bookings in range ${startTime} to ${endTime} for input ${JSON.stringify({
@@ -125,6 +131,7 @@ export class BusyTimesService {
         startDate: startTimeAdjustedWithMaxBuffer,
         endDate: endTimeAdjustedWithMaxBuffer,
         seatedEvent,
+        conflictCheckScope,
       });
     }
 
@@ -191,7 +198,7 @@ export class BusyTimesService {
     );
     performance.mark("prismaBookingGetEnd");
     performance.measure(`prisma booking get took $1'`, "prismaBookingGetStart", "prismaBookingGetEnd");
-    if (credentials?.length > 0 && !bypassBusyCalendarTimes) {
+    if (credentials?.length > 0 && !bypassBusyCalendarTimes && !scopeToEventType) {
       const startConnectedCalendarsGet = performance.now();
 
       const calendarBusyTimesQuery = await getBusyCalendarTimes(

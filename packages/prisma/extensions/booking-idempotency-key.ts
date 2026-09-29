@@ -7,17 +7,19 @@ function generateIdempotencyKey({
   startTime,
   endTime,
   userId,
+  eventTypeId,
   reassignedById,
 }: {
   startTime: Date | string;
   endTime: Date | string;
   userId?: number;
+  eventTypeId?: number | null;
   reassignedById?: number | null;
 }) {
-  return uuidv5(
-    `${startTime.valueOf()}.${endTime.valueOf()}.${userId}${reassignedById ? `.${reassignedById}` : ""}`,
-    uuidv5.URL
-  );
+  const parts = [startTime.valueOf(), endTime.valueOf(), userId];
+  if (eventTypeId) parts.push(`et${eventTypeId}`);
+  if (reassignedById) parts.push(reassignedById);
+  return uuidv5(parts.join("."), uuidv5.URL);
 }
 
 export function bookingIdempotencyKeyExtension() {
@@ -30,6 +32,7 @@ export function bookingIdempotencyKeyExtension() {
               startTime: args.data.startTime,
               endTime: args.data.endTime,
               userId: args.data.user?.connect?.id,
+              eventTypeId: args.data.eventTypeId ?? args.data.eventType?.connect?.id,
               reassignedById: args.data.reassignById,
             });
             args.data.idempotencyKey = idempotencyKey;

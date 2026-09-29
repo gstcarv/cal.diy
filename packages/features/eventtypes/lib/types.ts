@@ -182,6 +182,7 @@ export type FormValues = {
   restrictionScheduleId: number | null;
   useBookerTimezone: boolean;
   restrictionScheduleName: string | null;
+  conflictCheckScope: "USER" | "EVENT_TYPE";
   calVideoSettings?: CalVideoSettings;
   maxActiveBookingPerBookerOfferReschedule: boolean;
   enablePerHostLocations: boolean;
@@ -402,6 +403,7 @@ export type EventTypeUpdateInput = {
   secondaryEmailId?: number | null;
   useBookerTimezone?: boolean;
   restrictionScheduleId?: number | null;
+  conflictCheckScope?: "USER" | "EVENT_TYPE";
   bookingRequiresAuthentication?: boolean;
   rrHostSubsetEnabled?: boolean;
   createdAt?: Date | null;

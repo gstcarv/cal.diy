@@ -147,6 +147,7 @@ const BaseEventTypeUpdateInput: z.ZodType<TUpdateInputSchema> = z
     afterEventBuffer: z.number().int().optional(),
     seatsPerTimeSlot: z.number().min(1).max(MAX_SEATS_PER_TIME_SLOT).nullable().optional(),
     onlyShowFirstAvailableSlot: z.boolean().optional(),
+    conflictCheckScope: z.enum(["USER", "EVENT_TYPE"]).optional(),
     showOptimizedSlots: z.boolean().nullable().optional(),
     disableCancelling: z.boolean().nullable().optional(),
     disableRescheduling: z.boolean().nullable().optional(),

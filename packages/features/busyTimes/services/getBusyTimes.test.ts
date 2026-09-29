@@ -1,6 +1,9 @@
 import { prisma } from "@calcom/prisma/__mocks__/prisma";
 import dayjs from "@calcom/dayjs";
+import { getBusyCalendarTimes } from "@calcom/features/calendars/lib/CalendarManager";
 import { getBusyTimesService } from "@calcom/features/di/containers/BusyTimes";
+import type { CredentialForCalendarService } from "@calcom/types/Credential";
+import type { SelectedCalendar } from "@calcom/prisma/client";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@calcom/prisma", () => ({
@@ -105,6 +108,50 @@ describe("getBusyTimes", () => {
       }),
     ]);
   });
+  
+  it("skips external calendar busy times when conflictCheckScope is EVENT_TYPE", async () => {
+    vi.mocked(getBusyCalendarTimes).mockClear();
+    const busyTimesService = getBusyTimesService();
+    const credentials = [{ id: 1 }] as unknown as CredentialForCalendarService[];
+    const selectedCalendars = [{ id: "cal-1" }] as unknown as SelectedCalendar[];
+    await busyTimesService.getBusyTimes({
+      credentials,
+      userId: 1,
+      userEmail: "exampleuser1@example.com",
+      username: "exampleuser1",
+      eventTypeId: 1,
+      conflictCheckScope: "EVENT_TYPE",
+      bypassBusyCalendarTimes: false,
+      selectedCalendars,
+      startTime: startOfTomorrow.format(),
+      endTime: startOfTomorrow.endOf("day").format(),
+      currentBookings: mockBookings({}),
+    });
+    expect(getBusyCalendarTimes).not.toHaveBeenCalled();
+  });
+
+  it("includes external calendar busy times when conflictCheckScope is USER", async () => {
+    vi.mocked(getBusyCalendarTimes).mockClear();
+    vi.mocked(getBusyCalendarTimes).mockResolvedValueOnce({ success: true, data: [] });
+    const busyTimesService = getBusyTimesService();
+    const credentials = [{ id: 1 }] as unknown as CredentialForCalendarService[];
+    const selectedCalendars = [{ id: "cal-1" }] as unknown as SelectedCalendar[];
+    await busyTimesService.getBusyTimes({
+      credentials,
+      userId: 1,
+      userEmail: "exampleuser1@example.com",
+      username: "exampleuser1",
+      eventTypeId: 1,
+      conflictCheckScope: "USER",
+      bypassBusyCalendarTimes: false,
+      selectedCalendars,
+      startTime: startOfTomorrow.format(),
+      endTime: startOfTomorrow.endOf("day").format(),
+      currentBookings: mockBookings({}),
+    });
+    expect(getBusyCalendarTimes).toHaveBeenCalledTimes(1);
+  });
+
   it("should block before and after buffer times", async () => {
     const busyTimesService = getBusyTimesService();
     const busyTimes = await busyTimesService.getBusyTimes({

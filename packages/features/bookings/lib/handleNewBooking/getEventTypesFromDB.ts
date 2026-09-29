@@ -81,6 +81,7 @@ const getEventTypesFromDBSelect = {
   hideCalendarEventDetails: true,
   hideOrganizerEmail: true,
   seatsPerTimeSlot: true,
+  conflictCheckScope: true,
   recurringEvent: true,
   seatsShowAttendees: true,
   seatsShowAvailabilityCount: true,

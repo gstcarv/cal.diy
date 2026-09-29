@@ -47,6 +47,7 @@ export const eventTypeSelect = {
   afterEventBuffer: true,
   seatsPerTimeSlot: true,
   onlyShowFirstAvailableSlot: true,
+  conflictCheckScope: true,
   allowReschedulingPastBookings: true,
   hideOrganizerEmail: true,
   showOptimizedSlots: true,

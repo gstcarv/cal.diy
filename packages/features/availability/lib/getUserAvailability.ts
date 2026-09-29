@@ -589,6 +589,7 @@ export class UserAvailabilityService {
         startTime: getBusyTimesStart,
         endTime: getBusyTimesEnd,
         eventTypeId,
+        conflictCheckScope: eventType?.conflictCheckScope,
         userId: user.id,
         userEmail: user.email,
         username: `${user.username}`,

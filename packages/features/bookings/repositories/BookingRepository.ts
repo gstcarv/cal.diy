@@ -1,7 +1,7 @@
 import { withReporting } from "@calcom/lib/sentryWrapper";
 import type { PrismaClient } from "@calcom/prisma";
 import type { Booking, Prisma } from "@calcom/prisma/client";
-import { BookingStatus, RRTimestampBasis } from "@calcom/prisma/enums";
+import { BookingStatus, ConflictCheckScope, RRTimestampBasis } from "@calcom/prisma/enums";
 import { bookingDetailsSelect, bookingMinimalSelect } from "@calcom/prisma/selects/booking";
 import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
 import type {
@@ -689,19 +689,26 @@ export class BookingRepository implements IBookingRepository {
     startDate,
     endDate,
     userIdAndEmailMap,
+    conflictCheckScope = ConflictCheckScope.USER,
   }: {
     startDate: Date;
     endDate: Date;
     eventTypeId?: number | null;
     seatedEvent?: boolean;
     userIdAndEmailMap: Map<number, string>;
+    conflictCheckScope?: ConflictCheckScope;
   }) {
+    // When scoped to EVENT_TYPE, conflicts are only checked against bookings of this
+    // specific event type, ignoring the user's other event types and attendee bookings.
+    const eventTypeScoped = conflictCheckScope === ConflictCheckScope.EVENT_TYPE && !!eventTypeId;
+
     const sharedQuery = {
       startTime: { lte: endDate },
       endTime: { gte: startDate },
       status: {
         in: [BookingStatus.ACCEPTED],
       },
+      ...(eventTypeScoped && { eventTypeId }),
     };
 
     const bookingsSelect = {
