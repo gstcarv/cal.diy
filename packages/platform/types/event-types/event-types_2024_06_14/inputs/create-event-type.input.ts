@@ -1,5 +1,5 @@
 import { SUPPORTED_LOCALES } from "@calcom/platform-constants";
-import { SchedulingType } from "@calcom/platform-enums";
+import { ConflictCheckScope, SchedulingType } from "@calcom/platform-enums";
 import {
   ApiExtraModels,
   ApiHideProperty,
@@ -22,7 +22,6 @@ import {
   Min,
   ValidateNested,
 } from "class-validator";
-
 import { RequiresAtLeastOnePropertyWhenNotDisabled } from "../../../utils/RequiresOneOfPropertiesWhenNotDisabled";
 import { BookerActiveBookingsLimit_2024_06_14 } from "./booker-active-booking-limit.input";
 import { BookerLayouts_2024_06_14 } from "./booker-layouts.input";
@@ -355,6 +354,16 @@ export class BaseCreateEventTypeInput {
       "This will limit your availability for this event type to one slot per day, scheduled at the earliest available time.",
   })
   onlyShowFirstAvailableSlot?: boolean;
+
+  @IsOptional()
+  @IsEnum(ConflictCheckScope)
+  @DocsPropertyOptional({
+    type: String,
+    enum: ["USER", "EVENT_TYPE"],
+    description:
+      "Controls which bookings are considered when checking for conflicts. 'USER' (default) checks all of the user's bookings. 'EVENT_TYPE' only checks bookings of this event type, ignoring other event types and external calendars.",
+  })
+  conflictCheckScope?: keyof typeof ConflictCheckScope;
 
   @IsOptional()
   @ValidateBookingLimistsDuration()
